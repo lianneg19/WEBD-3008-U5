@@ -1,0 +1,11 @@
+<h1>Product</h1>
+<ul>
+  <% @products.each do |product| %>
+  <li>
+    <%= product.title %>
+    <%= " | Price: #{product.price}" %>
+    <%= " | Stock: #{product.stock_quantity}" %>
+    <% end %>
+  </li>
+
+</ul>
