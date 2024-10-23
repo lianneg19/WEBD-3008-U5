@@ -2,7 +2,7 @@
 <ul>
   <% @products.each do |product| %>
   <li>
-    <%= product.title %>
+    <%= link_to product.title, product_path(product) %>
     <%= " | Price: #{product.price}" %>
     <%= " | Stock: #{product.stock_quantity}" %>
     <% end %>
